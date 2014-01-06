@@ -1,0 +1,30 @@
+{
+    "phplint": {
+        "files": ["<%= app.sources %>/app/*.php",
+                  "<%= app.src %>/**/*.php"],
+    "tasks": ["phplint", "phpmd"]
+    },
+    "jshint": {
+        "files": ["<%= app.src %>/**/*.js"],
+        "tasks": ["jshint", "files_check:scripts"]
+    },
+    "templates": {
+        "files": ["<%= app.src %>/**/*.html.twig"],
+        "tasks": ["files_check:templates"]
+    },
+    "compass": {
+        "files": ["<%= app.src %>/**/*.scss"],
+        "tasks": ["compass", "autoprefixer"]
+    },
+    "reload-styles": {
+        "files": ["<%= app.src %>/**/*.css"],
+        "options": {"livereload": "<%= app.reload %>" }
+    },
+    "reload": {
+        "files": ["<%= app.src %>/**/*.html.twig",
+                  "<%= app.src %>/**/*.png",
+                  "<%= app.src %>/**/*.js",
+                  "<%= app.src %>/**/*Type.php"],
+        "options": {"livereload": "<%= app.reload %>" }
+    }
+}

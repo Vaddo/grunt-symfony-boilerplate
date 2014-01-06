@@ -1,0 +1,10 @@
+{
+  "build": {
+    "files": [{
+      "expand": true,
+      "cwd": "<%= app.dist %>/",
+      "src": ["**/images/**/*.{png,jpg}"],
+      "dest": "<%= app.dist %>"
+    }]
+  }
+}

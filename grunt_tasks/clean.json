@@ -1,0 +1,24 @@
+{
+  "cache": {
+    "files": {
+        "dot": "true",
+        "src": ["<%= app.cache %>/*",".sass-cache"]}
+  },
+
+  "dist": {
+    "files": {
+      "src": ["<%= app.dist %>"]
+    }
+  },
+
+  "build": {
+    "files": {
+      "src": ["<%= app.dist %>/composer.*", 
+              "<%= app.dist %>/*.md",
+              "<%= app.dist %>/app/cache/*",
+              "<%= app.dist %>/app/logs/*",
+              "<%= app.dist %>/**/sass",
+              "<%= app.dist %>/**/sprites*/"]
+    }
+  }
+}

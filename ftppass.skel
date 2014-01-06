@@ -1,0 +1,9 @@
+// WATCHOUT: Modify and rename this file to ".ftppass", if
+//           you use the "ftp-deploy" task.
+//           Don't forget to remove this comment block!
+{
+  "key1": {
+    "username": "username1",
+    "password": "password1"
+  }
+}

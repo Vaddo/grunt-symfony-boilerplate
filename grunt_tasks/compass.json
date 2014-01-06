@@ -1,0 +1,14 @@
+{
+  "options": {
+    "relativeAssets": true,
+    "outputStyle": "expanded",
+    "importPath": "<%= app.compassLib %>"
+  },
+  "location1": {
+    "options": {
+      "imagesDir": "<%= app.compassLocation1 %>/images",
+      "sassDir": "<%= app.compassLocation1 %>/sass",
+      "cssDir": "<%= app.compassLocation1 %>/styles"
+    }
+  }
+}

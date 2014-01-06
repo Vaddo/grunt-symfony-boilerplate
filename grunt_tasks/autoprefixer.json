@@ -1,0 +1,11 @@
+{
+    "options": {
+        "browsers": ["last 4 version", "ie 9"]
+    },
+    "multiple_files": {
+        "expand": true,
+        "flatten": true,
+        "src": "<%= app.compassLocation1 %>/styles/*.css",
+        "dest": "<%= app.compassLocation1 %>/styles/"
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "build": {
+    "expand": true,
+    "cwd": "<%= app.sources %>/",
+    "src": "**",
+    "dest": "<%= app.dist %>/"
+  }
+}

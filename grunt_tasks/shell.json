@@ -1,0 +1,11 @@
+{
+    "symlinks": {
+        "command": "<%= app.console %> assets:install <%= app.web %> --relative --symlink"
+    },
+    "assetic": {
+        "command": "<%= app.console %> assetic:dump --env=prod --no-debug"
+    },
+    "phpunit":{
+        "command": "<%= app.bin %>"
+    }
+}
