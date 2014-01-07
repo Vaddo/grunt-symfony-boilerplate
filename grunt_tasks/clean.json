@@ -18,7 +18,8 @@
               "<%= dist.cache %>/*",
               "<%= dist.logs %>/*",
               "<%= dist.root %>/**/sass",
-              "<%= dist.root %>/**/sprites*/"]
+              "<%= dist.root %>/**/sprites*/",
+              "<%= dist.root %>/**/styles*/"]
     }
   }
 }
