@@ -55,7 +55,7 @@ module.exports = function (grunt) {
             "bin":   "<%= dist.root %>/bin",
             "cache": "<%= dist.root %>/app/cache",
             "logs":  "<%= dist.root %>/app/logs"
-        }
+        },
 
         // root: symfony2 project folder
         // src: symfony2 src folder
@@ -72,14 +72,14 @@ module.exports = function (grunt) {
             "cache":   "<%= symfony.root %>/app/cache",
             "logs":    "<%= symfony.root %>/app/logs",
             "console": "<%= symfony.root %>/app/console",
-        }
+        },
 
         // compassLib: compass library folder
         // compassLocation1: scss files to compile
-        compass: {
+        sass: {
             "libs":      "<%= symfony.src %>/   {$replace$}   /Resources/public/sass",
             "location1": "<%= symfony.src %>/   {$replace$}   /Resources/public"
-        }
+        },
 
         deploy: {
             "host": "{$replace$}",

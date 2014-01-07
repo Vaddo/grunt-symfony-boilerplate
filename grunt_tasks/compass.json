@@ -2,13 +2,13 @@
   "options": {
     "relativeAssets": true,
     "outputStyle": "expanded",
-    "importPath": "<%= compass.libs %>"
+    "importPath": "<%= sass.libs %>"
   },
   "location1": {
     "options": {
-      "imagesDir": "<%= compass.location1 %>/images",
-      "sassDir": "<%= compass.location1 %>/sass",
-      "cssDir": "<%= compass.location1 %>/styles"
+      "imagesDir": "<%= sass.location1 %>/images",
+      "sassDir": "<%= sass.location1 %>/sass",
+      "cssDir": "<%= sass.location1 %>/styles"
     }
   }
 }

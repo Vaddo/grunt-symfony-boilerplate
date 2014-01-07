@@ -5,7 +5,7 @@
     "multiple_files": {
         "expand": true,
         "flatten": true,
-        "src": "<%= compass.location1 %>/styles/*.css",
-        "dest": "<%= compass.location1 %>/styles/"
+        "src": "<%= sass.location1 %>/styles/*.css",
+        "dest": "<%= sass.location1 %>/styles/"
     }
 }
