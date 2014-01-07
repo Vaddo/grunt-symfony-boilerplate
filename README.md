@@ -1,4 +1,4 @@
-grunt-symfony
+grunt-symfony-boilerplate
 =============
 
-A grunt project for symfony2 applications
+A grunt boilerplate for symfony2 applications
