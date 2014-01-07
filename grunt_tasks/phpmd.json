@@ -1,9 +1,9 @@
 {
     "develop": {
-        "dir": "<%= app.source %>"
+        "dir": "<%= symfony.root %>"
     },
     "options": {
-        "rulesets": "<%= app.rules %>/naming.xml,<%= app.rules %>/codesize.xml,<%= app.rules %>/unusedcode.xml",
+        "rulesets": "<%= app.tests %>/naming.xml,<%= app.tests %>/codesize.xml,<%= app.tests %>/unusedcode.xml",
         "reportFormat": "text",
         "strict": "true",
         "exclude": "temp"

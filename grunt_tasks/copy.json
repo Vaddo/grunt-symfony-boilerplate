@@ -1,8 +1,8 @@
 {
   "build": {
     "expand": true,
-    "cwd": "<%= app.sources %>/",
+    "cwd": "<%= symfony.root %>/",
     "src": "**",
-    "dest": "<%= app.dist %>/"
+    "dest": "<%= dist.root %>/"
   }
 }

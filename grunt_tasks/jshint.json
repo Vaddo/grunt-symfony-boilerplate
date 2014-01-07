@@ -3,5 +3,5 @@
     "jshintrc": ".jshintrc",
     "ignores": ["**/vendors/*.js"]
     },
-  "all": ["<%= app.src %>/**/*.js"]
+  "all": ["<%= symfony.src %>/**/*.js"]
 }

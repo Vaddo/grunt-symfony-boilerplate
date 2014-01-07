@@ -30,50 +30,62 @@ module.exports = function (grunt) {
 //
 // project setting -------------------------------------------------------------
 //
-        // root:  root folder of your project
-        // rules: ruleset folder for phpmd
-        // sources: symfony2 project folder
+
+        // root:   root folder of your project
+        // tests: ruleset folder for phpmd
+        // url: browser url to your app
+        // reload: reload port for the watch task
+        app: {
+            "root":   "../..",
+            "tests":  "tests/rulesets",
+            "url":    "http://localhost/   {$replace$}   /source/web/app_dev.php",
+            "reload": 1338
+        },
+
+        // root: app build folder
+        // src: symfony2 dist src folder
+        // web: symfony2 dist web folder
+        // bin: symfony2 dist bin folder
+        // cache: symfony2 dist cache folder
+        // logs: symfony2 dist log folder
+        dist: {
+            "root":  "<%= app.root %>/dist",
+            "src":   "<%= dist.root %>/src",
+            "web":   "<%= dist.root %>/web",
+            "bin":   "<%= dist.root %>/bin",
+            "cache": "<%= dist.root %>/app/cache",
+            "logs":  "<%= dist.root %>/app/logs"
+        }
+
+        // root: symfony2 project folder
         // src: symfony2 src folder
         // web: symfony2 web folder
         // bin: symfony2 bin folder
         // cache: symfony2 cache folder
         // console: symfomy2 console file
-        // dist: app build folder
-        // url: browser url to your app
-        // reload: reload port for the watch task
-        // compassLin: compass library folder
+        // logs: symfony2 log folder
+        symfony: {
+            "root":    "<%= app.root %>/source",
+            "src":     "<%= symfony.root %>/src",
+            "web":     "<%= symfony.root %>/web",
+            "bin":     "<%= symfony.root %>/bin",
+            "cache":   "<%= symfony.root %>/app/cache",
+            "logs":    "<%= symfony.root %>/app/logs",
+            "console": "<%= symfony.root %>/app/console",
+        }
+
+        // compassLib: compass library folder
         // compassLocation1: scss files to compile
-        app: {
-            "root": "../..",
-            "rules": "tests/rulesets",
-
-            "sources": "<%= app.root %>/source",
-
-            "src": "<%= app.sources %>/src",
-            "web": "<%= app.sources %>/web",
-            "bin": "<%= app.sources %>/bin",
-            "cache": "<%= app.sources %>/app/cache",
-            "console": "<%= app.sources %>/app/console",
-
-            "dist": "<%= app.root %>/dist",
-
-            "url": "http://localhost/   {XXX}   /source/web/app_dev.php",
-
-            "reload": 1338
-
-        },
-
         compass: {
-            "compassLib": "<%= app.src %>/   {XXX}   /Resources/public/sass",
-            "compassLocation1": "<%= app.src %>/   {XXX}   /Resources/public"
+            "libs":      "<%= symfony.src %>/   {$replace$}   /Resources/public/sass",
+            "location1": "<%= symfony.src %>/   {$replace$}   /Resources/public"
         }
 
         deploy: {
-            "host": "server.com",
+            "host": "{$replace$}",
             "port": 21,
-
-            "src": "path/to/source/folder",
-            "dest": "/path/to/destination/folder"
+            "src":  "{$replace$}",
+            "dest": "{$replace$}"
         },
 
 

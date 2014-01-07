@@ -3,8 +3,8 @@
       "phpCmd":     "/usr/bin/php",
       "phpArgs":    {"-l": null},
       "spawnLimit": 10,
-      "swapPath":   "<%= app.cache %>"
+      "swapPath":   "<%= symfony.cache %>"
   },
-  "files": ["<%= app.sources %>/app/**/*.php",
-            "<%= app.src %>/**/*.php"]
+  "files": ["<%= symfony.root %>/app/**/*.php",
+            "<%= symfony.src %>/**/*.php"]
 }

@@ -3,12 +3,12 @@
         "options": {
             "pattern": "css\\(|show\\(|hide\\("
         },
-        "src": ["<%= app.src %>/**/scripts/*.js"]
+        "src": ["<%= symfony.src %>/**/scripts/*.js"]
     },
     "templates": {
         "options": {
             "pattern": "style=|<style"
         },
-        "src": ["<%= app.src %>/**/*.html.twig"]
+        "src": ["<%= symfony.src %>/**/*.html.twig"]
     }
 }

@@ -2,9 +2,9 @@
   "build": {
     "files": [{
       "expand": true,
-      "cwd": "<%= app.dist %>/",
+      "cwd": "<%= dist.src %>/",
       "src": ["**/images/**/*.{png,jpg}"],
-      "dest": "<%= app.dist %>"
+      "dest": "<%= dist.src %>"
     }]
   }
 }
