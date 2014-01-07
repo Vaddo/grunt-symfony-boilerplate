@@ -1,0 +1,8 @@
+{
+  "build": {
+      "expand": true,
+      "cwd":  "<%= dist.web %>/",
+      "src":  "**/*.js",
+      "dest": "<%= dist.web %>/"
+  }
+}

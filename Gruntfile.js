@@ -17,6 +17,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-ftp-deploy');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.option( 'force', true )
 
 
@@ -121,6 +123,8 @@ module.exports = function (grunt) {
         shell:        grunt.file.readJSON('grunt_tasks/shell.json'),
 
         imagemin:     grunt.file.readJSON('grunt_tasks/imagemin.json'),
+        cssmin:       grunt.file.readJSON('grunt_tasks/cssmin.json'),
+        uglify:       grunt.file.readJSON('grunt_tasks/uglify.json'),
 
         'ftp-deploy':   grunt.file.readJSON('grunt_tasks/ftp-deploy.json')
     });
@@ -144,7 +148,9 @@ module.exports = function (grunt) {
                                  'clean:dist',
                                  'copy:build',
                                  'clean:build',
-                                 'imagemin']);
+                                 'imagemin',
+                                 'cssmin',
+                                 'uglify']);
 
     grunt.registerTask('deploy', ['ftp-deploy']);
 

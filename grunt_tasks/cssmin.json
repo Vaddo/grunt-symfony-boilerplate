@@ -1,0 +1,8 @@
+{
+  "minify": {
+    "expand": true,
+    "cwd": "<%= dist.web %>/",
+    "src":  ["**/*.css"],
+    "dest": "<%= dist.web %>/"
+  }
+}
