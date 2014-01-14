@@ -1,7 +1,7 @@
 {
   "options": {
     "jshintrc": ".jshintrc",
-    "ignores": ["**/vendors/*.js"]
-    },
+    "ignores": ["<%= symfony.src %>/**/vendors/*.js"]
+  },
   "all": ["<%= symfony.src %>/**/*.js"]
 }
