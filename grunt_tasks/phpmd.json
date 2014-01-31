@@ -1,11 +1,11 @@
 {
     "develop": {
-        "dir": "<%= symfony.root %>"
+        "dir": "<%= symfony.src %>"
     },
     "options": {
         "rulesets": "<%= app.tests %>/naming.xml,<%= app.tests %>/codesize.xml,<%= app.tests %>/unusedcode.xml",
         "reportFormat": "text",
         "strict": "true",
-        "exclude": "temp"
+        "exclude": ""
     }
 }
