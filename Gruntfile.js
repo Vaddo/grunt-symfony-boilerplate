@@ -39,7 +39,7 @@ module.exports = function (grunt) {
         // reload: reload port for the watch task
         app: {
             "root":   "../..",
-            "tests":  "tests/rulesets",
+            "tests":  "<%= app.root %>/dev/grunt/tests/rulesets",
             "url":    "http://localhost/   {$replace$}   /source/web/app_dev.php",
             "reload": 1338
         },
